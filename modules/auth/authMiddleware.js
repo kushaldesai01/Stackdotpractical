@@ -2,6 +2,7 @@ import jwt from "jsonwebtoken";
 import { userModel } from "../user/userModel.js";
 import { APP } from "../../services/constant.js";
 
+// Middleware to verify json web token
 export const verifyToken = async (req, res, next) => {
   try {
     const token = req.headers["authorization"];

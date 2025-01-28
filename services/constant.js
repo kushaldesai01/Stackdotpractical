@@ -1,6 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config();
 
+// App constants
 export const APP = {
   PORT: process.env.PORT,
   DATABASE_URL: process.env.DATABASE_URL,

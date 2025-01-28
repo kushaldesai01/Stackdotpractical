@@ -2,6 +2,7 @@ import { collegeModel } from "./collegeModel.js";
 import { competitiveExamModel } from "./competitiveExamModel.js";
 import { schoolModel } from "./schoolModel.js";
 
+// Controller to select school
 export const school = async (req, res) => {
   try {
     const { education_board, medium, class_category, standard, subjects } = req.body;
@@ -86,6 +87,7 @@ export const school = async (req, res) => {
   }
 };
 
+// Controller to select college
 export const college = async (req, res) => {
   try {
     const { university, degree } = req.body;
@@ -108,6 +110,7 @@ export const college = async (req, res) => {
   }
 };
 
+// Controller to select competitive exam
 export const competitiveExam = async (req, res) => {
   try {
     const { exam_name, exam_type } = req.body;

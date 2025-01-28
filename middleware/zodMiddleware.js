@@ -1,3 +1,4 @@
+// Middleware to parse zod schema
 export const zodMiddleware = (schema) => (req, res, next) => {
   try {
     const result = schema.safeParse(req.body);
